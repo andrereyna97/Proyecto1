@@ -45,6 +45,11 @@ public class Inicio extends javax.swing.JFrame {
         });
 
         jButton2.setText("OP2");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton3.setText("OP3");
 
@@ -134,6 +139,83 @@ public class Inicio extends javax.swing.JFrame {
         jTextField4.setText("Resultado: "+h);
         }
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        String text1 =jTextField1.getText();
+        String text2 =jTextField2.getText();
+        String text3 =jTextField3.getText();
+        String [] resultado = new String[3];
+        boolean A=false, E=false, I=false, O=false,U=false;
+        for (int i = 0; i <= text1.length(); i++) {
+            if (text1.charAt(i)== 'a' || text1.charAt(i)== 'á' ) {
+                A=true;
+            }
+               if (text1.charAt(i)== 'e' || text1.charAt(i)== 'é' ) {
+                E=true;
+            }
+                  if (text1.charAt(i)== 'i' || text1.charAt(i)== 'í' ) {
+                I=true;
+            }
+                     if (text1.charAt(i)== 'o' || text1.charAt(i)== 'ó' ) {
+                O=true;
+            }
+                        if (text1.charAt(i)== 'u' || text1.charAt(i)== 'ú' ) {
+                U=true;
+            }
+        }
+        if (A==true && E==true && I==true && O==true && U==true) {
+            resultado[0]=text1+", CUMPLE\n";
+        }else{
+         resultado[0]=text1+", NO CUMPLE\n";
+          A=false; E=false; I=false; O=false;U=false;
+        }
+           for (int i = 0; i <= text2.length(); i++) {
+            if (text1.charAt(i)== 'a' || text1.charAt(i)== 'á' ) {
+                A=true;
+            }
+               if (text1.charAt(i)== 'e' || text1.charAt(i)== 'é' ) {
+                E=true;
+            }
+                  if (text1.charAt(i)== 'i' || text1.charAt(i)== 'í' ) {
+                I=true;
+            }
+                     if (text1.charAt(i)== 'o' || text1.charAt(i)== 'ó' ) {
+                O=true;
+            }
+                        if (text1.charAt(i)== 'u' || text1.charAt(i)== 'ú' ) {
+                U=true;
+            }
+        }
+        if (A==true && E==true && I==true && O==true && U==true) {
+            resultado[1]=text2+", CUMPLE\n";
+        }else{
+         resultado[1]=text2+", NO CUMPLE\n";
+          A=false; E=false; I=false; O=false;U=false;
+        }
+           for (int i = 0; i <= text3.length(); i++) {
+            if (text1.charAt(i)== 'a' || text1.charAt(i)== 'á' ) {
+                A=true;
+            }
+               if (text1.charAt(i)== 'e' || text1.charAt(i)== 'é' ) {
+                E=true;
+            }
+                  if (text1.charAt(i)== 'i' || text1.charAt(i)== 'í' ) {
+                I=true;
+            }
+                     if (text1.charAt(i)== 'o' || text1.charAt(i)== 'ó' ) {
+                O=true;
+            }
+                        if (text1.charAt(i)== 'u' || text1.charAt(i)== 'ú' ) {
+                U=true;
+            }
+        }
+        if (A==true && E==true && I==true && O==true && U==true) {
+            resultado[2]=text3+", CUMPLE\n";
+        }else{
+         resultado[2]=text3+", NO CUMPLE\n";
+          A=false; E=false; I=false; O=false;U=false;
+        }
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
