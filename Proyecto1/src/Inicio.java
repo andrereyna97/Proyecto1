@@ -52,6 +52,11 @@ public class Inicio extends javax.swing.JFrame {
         });
 
         jButton3.setText("OP3");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         jButton4.setText("OP4");
 
@@ -216,6 +221,23 @@ public class Inicio extends javax.swing.JFrame {
           A=false; E=false; I=false; O=false;U=false;
         }
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        char[] text1 =jTextField1.getText().toCharArray();
+        char[] text2 =jTextField2.getText().toCharArray();
+        char[] text3 =jTextField3.getText().toCharArray();
+        String t1 = null, t2=null, t3=null;
+        for (int i = text1.length-1; i >=0; i--) {
+            t1=t1+text1[i];
+        }
+          for (int i = text2.length-1; i >=0; i--) {
+            t2=t2+text2[i];
+        }
+            for (int i = text3.length-1; i >=0; i--) {
+            t3=t3+text3[i];
+        }
+            jTextField4.setText(t1+" "+t2+" "+t3);
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
