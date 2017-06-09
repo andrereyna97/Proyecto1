@@ -241,7 +241,7 @@ public class Inicio extends javax.swing.JFrame {
             for (int i = text3.length-1; i >=0; i--) {
             t3=t3+text3[i];
         }
-            jTextField4.setText(t1+" "+t2+" "+t3);
+            jTextField4.setText(t1+" "+t2+" "+t3+" Carnet: 201504171");
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
