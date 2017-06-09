@@ -1,0 +1,9 @@
+1. Que es un commit? 
+   Guardas cambios en el repositorio
+2. Que entiende como merge?
+    Unir 2 o mas historias de desarrollo 
+3. Cual es la diferencia entre pull y push?
+   Con push mandamos nuestro cambio hecho al archivo al repositorio y con pull
+   recibimos todos los cambios hecho al archivo que esta en el repositorio
+4. Como utilizar ramas en la aplicacion? 
+   Para hacer actulizaciones, hacer cambios en el momento o aislar problemas
