@@ -59,6 +59,11 @@ public class Inicio extends javax.swing.JFrame {
         });
 
         jButton4.setText("OP4");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -238,6 +243,15 @@ public class Inicio extends javax.swing.JFrame {
         }
             jTextField4.setText(t1+" "+t2+" "+t3);
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        int x,y,z; //x Y y son valores que ya se sabe 5 es a 10 como ejemplo, Y z es el valor que no tiene su igualdad
+        x=Integer.parseInt(jTextField1.getText());
+        y=Integer.parseInt(jTextField2.getText());
+        z=Integer.parseInt(jTextField3.getText());
+        int Resultado = (z*y)/x;
+        jTextField4.setText("Rsultado: "+Resultado);
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments
